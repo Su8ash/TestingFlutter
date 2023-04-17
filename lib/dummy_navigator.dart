@@ -18,54 +18,17 @@ class DummyNavigatorScreen extends StatelessWidget {
                 child: const Text('Go to the Home screen'),
               ),
               ElevatedButton(
-                onPressed: () => context.push('/onboarding'),
-                child: const Text('Go to the Onboarding screen'),
-              ),
-
-              ElevatedButton(
-                onPressed: () => context.push('/bookmark'),
-                child: const Text('Go to the Bookmark screen'),
+                onPressed: () => context.push('/reoderableListview'),
+                child: const Text('Reorder List'),
               ),
               ElevatedButton(
-                onPressed: () => context.push('/cuisine_detail'),
-                child: const Text('Go to the Cuisine Detail screen'),
+                onPressed: () => context.push('/reorderableListWithSqflite'),
+                child: const Text('Reorderable List with SQflite'),
               ),
               ElevatedButton(
-                onPressed: () => context.push('/notification'),
-                child: const Text('Go to the Notification screen'),
+                onPressed: () => context.push('/geoLocator'),
+                child: const Text('Geo Locator'),
               ),
-              ElevatedButton(
-                onPressed: () => context.push('/discover'),
-                child: const Text('Go to the Discover screen'),
-              ),
-              ElevatedButton(
-                onPressed: () => context.push('/details'),
-                child: const Text('Go to the Details screen'),
-              ),
-              ElevatedButton(
-                onPressed: () => context.push('/splash'),
-                child: const Text('Go to the Splash screen'),
-              ),
-              ElevatedButton(
-                onPressed: () => context.push('/login'),
-                child: const Text('Go to the Login screen'),
-              ),
-              // ElevatedButton(
-              //   onPressed: () => context.push('/country'),
-              //   child: const Text('Go to the Country screen'),
-              // ),
-              // ElevatedButton(
-              //   onPressed: () => context.push('/cooking_level'),
-              //   child: const Text('Go to the Cooking Level screen'),
-              // ),
-              // ElevatedButton(
-              //   onPressed: () => context.push('/cuisines_pref'),
-              //   child: const Text('Go to the Cuisine Pref screen'),
-              // ),
-              // ElevatedButton(
-              //   onPressed: () => context.push('/dietary_pref'),
-              //   child: const Text('Go to the Dietary Pref screen'),
-              // ),
             ],
           ),
         ),
