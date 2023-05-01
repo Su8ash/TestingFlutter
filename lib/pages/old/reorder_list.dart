@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class ReorderableListExample extends StatefulWidget {
@@ -63,7 +62,19 @@ class _ReorderableListExampleState extends State<ReorderableListExample> {
               ),
             ),
           ),
-          onReorder: (oldIndex, newIndex) {},
+          onReorder: (oldIndex, newIndex) {
+            if (newIndex > oldIndex) {
+              newIndex--;
+            }
+
+            final item = names.removeAt(oldIndex);
+            //log(jsonEncode(item));
+            names.insert(newIndex, item);
+
+            setState(() {
+              names;
+            });
+          },
         ),
       ),
     );

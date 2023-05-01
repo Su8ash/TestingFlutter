@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:test_flutter/dummy_navigator.dart';
-import 'package:test_flutter/geo_locator.dart';
-import 'package:test_flutter/reorder_list.dart';
-import 'package:test_flutter/reorderable_list_with_sqflite.dart';
+import 'package:test_flutter/pages/old/geo_locator.dart';
+import 'package:test_flutter/pages/old/reoderable_list_with_namelist.dart';
+import 'package:test_flutter/pages/old/reorder_list.dart';
+import 'package:test_flutter/pages/old/reorderable_list_with_sqflite.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,13 +28,31 @@ final GoRouter _router = GoRouter(
           },
         ),
         GoRoute(
+          path: 'reoderableWithNameList',
+          builder: (BuildContext context, GoRouterState state) {
+            return const ReorderableWithNameList();
+          },
+        ),
+        GoRoute(
           path: 'reorderableListWithSqflite',
           builder: (BuildContext context, GoRouterState state) {
-            return const ReorderableListWithSqflite();
+            return ReorderableListWithSqflite();
           },
         ),
         GoRoute(
           path: 'geoLocator',
+          builder: (BuildContext context, GoRouterState state) {
+            return const GeoLocator();
+          },
+        ),
+        GoRoute(
+          path: 'MMVReoderableList',
+          builder: (BuildContext context, GoRouterState state) {
+            return const GeoLocator();
+          },
+        ),
+        GoRoute(
+          path: 'MMVReoderableListWithSQLLite',
           builder: (BuildContext context, GoRouterState state) {
             return const GeoLocator();
           },

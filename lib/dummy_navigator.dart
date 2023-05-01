@@ -18,8 +18,20 @@ class DummyNavigatorScreen extends StatelessWidget {
                 child: const Text('Go to the Home screen'),
               ),
               ElevatedButton(
+                onPressed: () => context.push('/MMVReoderableList'),
+                child: const Text('Reorder List Simple Example'),
+              ),
+              ElevatedButton(
+                onPressed: () => context.push('/MMVReoderableListWithSQLLite'),
+                child: const Text('Reorder List With Sqlite'),
+              ),
+              ElevatedButton(
                 onPressed: () => context.push('/reoderableListview'),
                 child: const Text('Reorder List'),
+              ),
+              ElevatedButton(
+                onPressed: () => context.push('/reoderableWithNameList'),
+                child: const Text('Reorder List with NameList'),
               ),
               ElevatedButton(
                 onPressed: () => context.push('/reorderableListWithSqflite'),
