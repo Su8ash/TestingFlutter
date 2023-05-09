@@ -6,6 +6,7 @@ import 'package:test_flutter/pages/old/geo_locator.dart';
 import 'package:test_flutter/pages/old/reoderable_list_with_namelist.dart';
 import 'package:test_flutter/pages/old/reorder_list.dart';
 import 'package:test_flutter/pages/old/reorderable_list_with_sqflite.dart';
+import 'package:test_flutter/pages/old/reoderable_list.dart';
 
 void main() {
   runApp(const MyApp());
@@ -48,7 +49,7 @@ final GoRouter _router = GoRouter(
         GoRoute(
           path: 'MMVReoderableList',
           builder: (BuildContext context, GoRouterState state) {
-            return const GeoLocator();
+            return const MyReorderableList();
           },
         ),
         GoRoute(
